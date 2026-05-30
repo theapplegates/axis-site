@@ -30,6 +30,7 @@ Thumbs.db
 # debug
 npm-debug.log*
 pnpm-debug.log*
+bun.lock
 
 # Vault CMS / Obsidian
 **/.obsidian/workspace.json
