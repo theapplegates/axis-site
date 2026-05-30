@@ -1,0 +1,24 @@
+# Obsidian workspace files
+**/.obsidian/workspace.json
+**/.obsidian/workspace-mobile.json
+
+# Local repository reference folder
+.ref/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# npm pack / publish build artifacts (regenerated on every publish; never commit)
+*.tgz
+*.tar.gz
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Private Reference
+AGENTS.md

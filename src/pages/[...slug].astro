@@ -1,0 +1,23 @@
+---
+import PageLayout from '@/layouts/PageLayout.astro';
+import { getCollection, render } from 'astro:content';
+import type { Page } from '@/types';
+
+export async function getStaticPaths() {
+  const allPages = await getCollection('pages') as unknown as Page[];
+  const pages = allPages.filter((page) => !page.data.draft || !import.meta.env.PROD);
+
+  return pages.map((page) => ({
+    params: { slug: page.id },
+    props: { page },
+  }));
+}
+
+const { page } = Astro.props;
+const { Content, headings, remarkPluginFrontmatter } = await render(page as any);
+const hasMath = Boolean((remarkPluginFrontmatter as any)?.hasMath);
+---
+
+<PageLayout page={page} headings={headings} hasMath={hasMath}>
+  <Content />
+</PageLayout>

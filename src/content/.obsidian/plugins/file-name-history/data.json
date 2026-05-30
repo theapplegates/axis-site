@@ -1,0 +1,19 @@
+{
+  "historyPropertyName": "redirects",
+  "ignoreRegexes": [
+    "^_",
+    "^Untitled$",
+    "^Untitled \\d+$"
+  ],
+  "timeoutSeconds": 5,
+  "caseSensitive": false,
+  "autoCreateFrontmatter": true,
+  "includeFolders": [],
+  "excludeFolders": [],
+  "fileExtensions": [
+    "md",
+    "mdx"
+  ],
+  "trackFolderRenames": "index",
+  "excludePropertyName": ""
+}

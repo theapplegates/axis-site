@@ -1,0 +1,24 @@
+---
+import ProjectLayout from '@/layouts/ProjectLayout.astro';
+import { getCollection, render } from 'astro:content';
+import { siteConfig } from '@/config';
+import type { Project } from '@/types';
+
+export async function getStaticPaths() {
+  const projects = await getCollection('projects');
+  return projects
+    .filter(p => !p.data.draft)
+    .map(project => ({
+      params: { slug: project.id },
+      props: { project },
+    }));
+}
+
+const { project } = Astro.props as { project: Project };
+const { Content, headings, remarkPluginFrontmatter } = await render(project as any);
+const hasMath = Boolean((remarkPluginFrontmatter as any)?.hasMath);
+---
+
+<ProjectLayout project={project} headings={headings} hasMath={hasMath}>
+  <Content />
+</ProjectLayout>
