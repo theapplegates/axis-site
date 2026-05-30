@@ -35,3 +35,6 @@ pnpm-debug.log*
 **/.obsidian/workspace.json
 **/.obsidian/workspace-mobile.json
 .ref/
+
+# Local Netlify folder
+.netlify
