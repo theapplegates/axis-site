@@ -1,5 +1,5 @@
 {
-  "historyPropertyName": "redirects",
+  "historyPropertyName": "aliases",
   "ignoreRegexes": [
     "^_",
     "^Untitled$",

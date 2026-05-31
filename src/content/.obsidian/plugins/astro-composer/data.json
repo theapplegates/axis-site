@@ -3,7 +3,7 @@
   "autoInsertProperties": true,
   "dateFormat": "YYYY-MM-DD",
   "enableCopyHeadingLink": true,
-  "copyHeadingLinkFormat": "obsidian",
+  "copyHeadingLinkFormat": "astro",
   "addTrailingSlashToLinks": true,
   "enableOpenTerminalCommand": true,
   "terminalProjectRootPath": "../..",
@@ -24,71 +24,6 @@
       "creationMode": "folder",
       "indexFileName": "index",
       "ignoreSubfolders": false,
-      "enableUnderscorePrefix": false,
-      "modifiedDateField": "updated"
-    },
-    {
-      "id": "content-type-1772132371352-r31lvw75i",
-      "name": "Pages",
-      "folder": "pages",
-      "linkBasePath": "/",
-      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\nupdated: \"\"\nshowUpdated: false\nhideTOC: false\nnoIndex: false\ndraft: true\n---\n",
-      "enabled": true,
-      "creationMode": "folder",
-      "indexFileName": "index",
-      "ignoreSubfolders": false,
-      "enableUnderscorePrefix": false,
-      "modifiedDateField": "updated"
-    },
-    {
-      "id": "content-type-1772132371352-s44hdhzm0",
-      "name": "Projects",
-      "folder": "projects",
-      "linkBasePath": "/projects/",
-      "template": "---\ntitle: \"{{title}}\"\ndate: {{date}}\ndescription: \"\"\ncategories: []\nrepositoryUrl: \"\"\nprojectUrl: \"\"\nstatus: \"\"\nimage: \"\"\nimageAlt: \"\"\nhideCoverImage: false\nhideTOC: false\ndraft: true\nfeatured: false\n---\n",
-      "enabled": true,
-      "creationMode": "folder",
-      "indexFileName": "index",
-      "ignoreSubfolders": false,
-      "enableUnderscorePrefix": false
-    },
-    {
-      "id": "content-type-1772132371352-eyu7owcpz",
-      "name": "Docs",
-      "folder": "docs",
-      "linkBasePath": "/docs/",
-      "template": "---\ntitle: \"{{title}}\"\nlastModified: {{date}}\ndescription: \"\"\ncategory: \"\"\norder: 0\nversion: \"\"\nupdated: \"\"\nimage: \"\"\nimageAlt: \"\"\nhideCoverImage: false\ndraft: true\nfeatured: \"\"\n---\n",
-      "enabled": true,
-      "creationMode": "folder",
-      "indexFileName": "index",
-      "ignoreSubfolders": false,
-      "enableUnderscorePrefix": false,
-      "modifiedDateField": "updated"
-    },
-    {
-      "id": "content-1773467930749",
-      "name": "Redirects",
-      "folder": "redirects",
-      "linkBasePath": "",
-      "template": "---\ntitle: \"{{title}}\"\nlink: \"\"\nindexed: false\n---",
-      "enabled": true,
-      "creationMode": "file",
-      "indexFileName": "",
-      "ignoreSubfolders": false,
-      "enableUnderscorePrefix": false,
-      "useMdxExtension": false,
-      "modifiedDateField": ""
-    },
-    {
-      "id": "content-type-1774068077657-u6s0dn",
-      "name": "Podcasts",
-      "folder": "podcasts",
-      "linkBasePath": "/podcasts/",
-      "template": "---\n---\n",
-      "enabled": true,
-      "creationMode": "folder",
-      "indexFileName": "index",
-      "ignoreSubfolders": false,
       "enableUnderscorePrefix": false
     },
     {
@@ -104,11 +39,11 @@
       "enableUnderscorePrefix": false
     },
     {
-      "id": "content-type-1774114263351-wk7p4f",
-      "name": "Tools",
-      "folder": "tools",
-      "linkBasePath": "/tools/",
-      "template": "---\n---\n",
+      "id": "content-type-1772132371352-eyu7owcpz",
+      "name": "Docs",
+      "folder": "docs",
+      "linkBasePath": "/docs/",
+      "template": "---\ntitle: \"{{title}}\"\nlastModified: {{date}}\ndescription: \"\"\ncategory: \"\"\norder: 0\nversion: \"\"\nupdated: \"\"\nimage: \"\"\nimageAlt: \"\"\nhideCoverImage: false\ndraft: true\nfeatured: \"\"\n---\n",
       "enabled": true,
       "creationMode": "folder",
       "indexFileName": "index",
@@ -128,6 +63,42 @@
       "enableUnderscorePrefix": false
     },
     {
+      "id": "content-type-1772132371352-r31lvw75i",
+      "name": "Pages",
+      "folder": "pages",
+      "linkBasePath": "/",
+      "template": "---\ntitle: \"{{title}}\"\ndescription: \"\"\nupdated: \"\"\nshowUpdated: false\nhideTOC: false\nnoIndex: false\ndraft: true\n---\n",
+      "enabled": true,
+      "creationMode": "folder",
+      "indexFileName": "index",
+      "ignoreSubfolders": false,
+      "enableUnderscorePrefix": false
+    },
+    {
+      "id": "content-type-1774068077657-u6s0dn",
+      "name": "Podcasts",
+      "folder": "podcasts",
+      "linkBasePath": "/podcasts/",
+      "template": "---\n---\n",
+      "enabled": true,
+      "creationMode": "folder",
+      "indexFileName": "index",
+      "ignoreSubfolders": false,
+      "enableUnderscorePrefix": false
+    },
+    {
+      "id": "content-type-1772132371352-s44hdhzm0",
+      "name": "Projects",
+      "folder": "projects",
+      "linkBasePath": "/projects/",
+      "template": "---\ntitle: \"{{title}}\"\ndate: {{date}}\ndescription: \"\"\ncategories: []\nrepositoryUrl: \"\"\nprojectUrl: \"\"\nstatus: \"\"\nimage: \"\"\nimageAlt: \"\"\nhideCoverImage: false\nhideTOC: false\ndraft: true\nfeatured: false\n---\n",
+      "enabled": true,
+      "creationMode": "folder",
+      "indexFileName": "index",
+      "ignoreSubfolders": false,
+      "enableUnderscorePrefix": false
+    },
+    {
       "id": "content-type-1772132371352-9m60i2o40",
       "name": "Special Pages",
       "folder": "special",
@@ -138,12 +109,24 @@
       "indexFileName": "index",
       "ignoreSubfolders": false,
       "enableUnderscorePrefix": false
+    },
+    {
+      "id": "content-type-1774114263351-wk7p4f",
+      "name": "Tools",
+      "folder": "tools",
+      "linkBasePath": "/tools/",
+      "template": "---\n---\n",
+      "enabled": true,
+      "creationMode": "folder",
+      "indexFileName": "index",
+      "ignoreSubfolders": false,
+      "enableUnderscorePrefix": false
     }
   ],
   "migrationCompleted": true,
   "helpButtonReplacement": {
     "enabled": true,
-    "commandId": "axis-settings:open-axis-settings",
+    "commandId": "astro-composer:edit-astro-config",
     "iconId": "rocket"
   },
   "showMdxFilesInExplorer": true,

@@ -31,6 +31,9 @@ import rehypeExternalLinks from 'rehype-external-links';
 import rehypeComponents from 'rehype-components';
 import { GithubCardComponent } from './src/utils/rehype-github-card.mjs';
 import { fileURLToPath } from 'url';
+import { unified } from '@astrojs/markdown-remark';
+import remarkToc from 'remark-toc';
+import { satteri } from '@astrojs/markdown-satteri';
 import { getPropertyRedirects } from './src/utils/property-redirects.ts';
 
 const propertyRedirects = getPropertyRedirects();
@@ -63,54 +66,14 @@ export default defineConfig({
     sitemap(),
   ],
   markdown: {
+    processor: satteri({
+      features: { directive: true },
+    }),
     remarkPlugins: [
-      remarkDirective,
-      parseDirectiveNode,
-      remarkInternalLinks,
-      remarkInlineTags,
-      remarkObsidianComments,
-      remarkFolderImages,
-      remarkObsidianEmbeds,
-      remarkObsidianImageSize,
-      remarkImageCaptions,
-      remarkMath,
-      remarkObsidianDisplayMath,
-      remarkDetectMath,
-      remarkCallouts,
-      remarkBreaksSafe,
-      remarkImageGrids,
-      remarkMermaid,
-      remarkStripTocHeading,
-      remarkStripFirstH1,
-      remarkExtendedEmbeds,
+      // all your existing plugins here
     ],
     rehypePlugins: [
-      rehypeKatex,
-      rehypeMark,
-      rehypeImageAttributes,
-      rehypeFigureCaptions,
-      rehypeTableWrapper,
-      [rehypeComponents, {
-        components: {
-          github: GithubCardComponent,
-        }
-      }],
-      [rehypeSlug, {
-        test: (node) => node.tagName !== 'h1'
-      }],
-      [rehypeAutolinkHeadings, {
-        behavior: 'wrap',
-        test: (node) => node.tagName !== 'h1',
-        properties: {
-          className: ['anchor-link'],
-          ariaLabel: 'Link to this section'
-        }
-      }],
-      [rehypeExternalLinks, {
-        target: '_blank',
-        rel: [],
-      }],
-      rehypeNormalizeAnchors,
+      // all your existing rehype plugins here
     ],
     syntaxHighlight: {
       type: 'shiki',
@@ -122,17 +85,8 @@ export default defineConfig({
     }
   },
   vite: {
-    assetsInclude: ['**/*.base', '**/*.home', '**/*.base'],
-    resolve: {
-      alias: {
-        '@': fileURLToPath(new URL('./src', import.meta.url)),
-        '@/components': fileURLToPath(new URL('./src/components', import.meta.url)),
-        '@/layouts': fileURLToPath(new URL('./src/layouts', import.meta.url)),
-        '@/utils': fileURLToPath(new URL('./src/utils', import.meta.url)),
-        '@/types': fileURLToPath(new URL('./src/types.ts', import.meta.url)),
-        '@/config': fileURLToPath(new URL('./src/config.ts', import.meta.url))
-      }
-    },
+    assetsInclude: ['**/*.base', '**/.obsidian/**', '**/_bases/**'],
+    // your existing vite config
     optimizeDeps: {
       include: [
         'medium-zoom',

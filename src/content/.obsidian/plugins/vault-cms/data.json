@@ -149,7 +149,8 @@
       "descriptionProperty": "description",
       "tagsProperty": "tags",
       "hasDraftStatus": false,
-      "template": "---\ndescription: \"\"\ntags: []\n---\n"
+      "template": "---\ndescription: \"\"\ntags: []\n---\n",
+      "titleProperty": "Living Life"
     },
     "content-type-1774114724830-069fcf": {
       "hasDraftStatus": false,
@@ -168,7 +169,7 @@
   "preset": "vanilla",
   "presetName": "",
   "presetsRepo": "davidvkimball/vault-cms-presets",
-  "enableEditingToolbar": false,
+  "enableEditingToolbar": true,
   "enableExtendedFileTypes": true,
   "enabledPlugins": [
     "astro-composer",
@@ -309,7 +310,7 @@
     "enableMDXSupport": true
   },
   "propertyOverFileName": {
-    "propertyKey": "title",
+    "propertyKey": "Living Life",
     "enableMdxSupport": true
   },
   "imageManager": {

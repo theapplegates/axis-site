@@ -2,7 +2,7 @@
   "scanDirectories": "posts",
   "ignoreUnderscoreFiles": false,
   "enableMDXSupport": true,
-  "keywordProperty": "keyword",
+  "keywordProperty": "",
   "descriptionProperty": "description",
   "titleProperty": "title",
   "useFilenameAsTitle": false,

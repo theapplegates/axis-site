@@ -1,8 +1,8 @@
 {
   "lightStyle": "oxygen-light",
   "darkStyle": "oxygen-dark",
-  "lightScheme": "oxygen-custom-axis",
-  "darkScheme": "oxygen-custom-axis",
+  "lightScheme": "oxygen-oxygen-light",
+  "darkScheme": "oxygen-oxygen-dark",
   "editorFont": "",
   "lineHeight": 1.5,
   "lineWidth": 40,
@@ -31,58 +31,6 @@
   "readableLineLength": true,
   "devBlockWidth": false,
   "customPresets": [
-    {
-      "id": "axis",
-      "name": "Axis",
-      "author": "David V. Kimball",
-      "version": "1.0.0",
-      "light": {
-        "base": {
-          "h": 33,
-          "s": 30,
-          "l": 96
-        },
-        "accent": {
-          "h": 16,
-          "s": 54,
-          "l": 47
-        },
-        "colors": {
-          "bg1": "#faf8f5",
-          "bg2": "#f2ede6",
-          "bg3": "#fdfcfa",
-          "ui1": "#e8e0d6",
-          "ui2": "#ddd4c8",
-          "tx1": "#1a1714",
-          "tx2": "#7a6f65",
-          "tx3": "#9a8f85"
-        }
-      },
-      "dark": {
-        "base": {
-          "h": 24,
-          "s": 10,
-          "l": 10
-        },
-        "accent": {
-          "h": 16,
-          "s": 70,
-          "l": 60
-        },
-        "colors": {
-          "bg1": "#1c1917",
-          "bg2": "#141210",
-          "bg3": "#242120",
-          "ui1": "#2e2924",
-          "ui2": "#3a342e",
-          "ui3": "#2e2924",
-          "tx1": "#f5f0ea",
-          "tx2": "#a09080",
-          "tx3": "#7a6c5e"
-        },
-        "frameLightnessOffset": -3
-      }
-    },
     {
       "id": "discord",
       "name": "Discord",

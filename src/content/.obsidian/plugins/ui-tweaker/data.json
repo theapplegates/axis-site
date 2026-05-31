@@ -1,13 +1,13 @@
 {
-  "titleBar": "reveal",
+  "titleBar": "show",
   "fileExplorerNavHeader": "show",
   "otherNavHeaders": "show",
   "leftTabHeaders": "show",
   "rightTabHeaders": "show",
   "ribbonRevealOnHover": false,
-  "vaultSwitcher": "reveal",
-  "helpButton": "reveal",
-  "settingsButton": "reveal",
+  "vaultSwitcher": "show",
+  "helpButton": "show",
+  "settingsButton": "show",
   "tabBar": false,
   "tabBarHideWhenSingle": false,
   "enableWindowDragging": false,
@@ -29,9 +29,9 @@
   "tooltips": false,
   "searchSuggestions": false,
   "searchTermCounts": false,
-  "propertiesInReadingView": true,
-  "propertiesInHeading": true,
-  "addPropertyButton": true,
+  "propertiesInReadingView": false,
+  "propertiesInHeading": false,
+  "addPropertyButton": false,
   "deemphasizeProperties": false,
   "instructions": false,
   "mobileChevronsIcon": false,
@@ -54,7 +54,7 @@
   "vaultSwitcherBackgroundTransparency": 1,
   "helpButtonReplacement": {
     "enabled": false,
-    "commandId": "astro-composer:edit-astro-config",
+    "commandId": "",
     "iconId": "wrench"
   },
   "syncButtonReplacement": {
@@ -126,7 +126,14 @@
     },
     {
       "id": "plugin-obsidian-git-status;1",
-      "name": "Last Commit: 9 hours ago",
+      "name": "Git: pull: everything is up-to-date",
+      "type": "existing",
+      "hidden": false,
+      "mdOnly": false
+    },
+    {
+      "id": "plugin-obsidian-git-status;2",
+      "name": "Uninitialized",
       "type": "existing",
       "hidden": false,
       "mdOnly": false
@@ -251,30 +258,6 @@
     {
       "id": "categories",
       "icon": "lucide-list-x"
-    },
-    {
-      "id": "redirects",
-      "icon": "lucide-corner-down-right"
-    },
-    {
-      "id": "updated",
-      "icon": "lucide-calendar-clock"
-    },
-    {
-      "id": "keyword",
-      "icon": "lucide-search-check"
-    },
-    {
-      "id": "link",
-      "icon": "lucide-link-2"
-    },
-    {
-      "id": "managed-by",
-      "icon": "lucide-folder-cog"
-    },
-    {
-      "id": "hidelocalgraph",
-      "icon": "lucide-message-square-off"
     }
   ],
   "minimalPropertyIcons": false,
