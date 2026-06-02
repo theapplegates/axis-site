@@ -1,3 +1,6 @@
+[context.production.environment]
+PNPM_VERSION = "10.5.1"
+
 [build]
   command = "pnpm run build"
   publish = "dist"
